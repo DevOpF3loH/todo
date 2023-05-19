@@ -1,0 +1,172 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Yosa's Todos</title>
+    <link rel="icon" type="png" href="/img/favicon.png" />
+  </head>
+  <body class="bodyWhite">
+    <div class="iconHeader">
+      <div class="title text-light">
+        <h1>Yosabeth's Todos List</h1>
+      </div>
+      <div class="clock"></div>
+    </div>
+    <div class="mainGrid">
+      <div class="grid1">
+        <div class="container">
+          <header>
+            <div class="header">
+              <div class="icons text-light">
+                <i class="fa-solid fa-star blight"></i>
+                <i class="fa-sharp fa-solid fa-moon bdark"></i>
+              </div>
+              <div class="imgContainer">
+                <div class="img">
+                  <img class="logo1" src="img/logo1.jpg" alt="Yosabeth's pic" />
+                  <img class="logo2" src="img/logo2.jpg" alt="Yosabeth's pic" />
+                </div>
+                <div class="quote">
+                  <p>-mon soleil continuera de briller🌞</p>
+                </div>
+              </div>
+            </div>
+          </header>
+          <ul class="list-group todos1 mx-auto text-light mt-4">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-light"
+            >
+              <i class="fa-solid fa-check check"></i>
+              <span>Wake up</span>
+              <i class="far fa-trash-alt delete"></i>
+            </li>
+
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-light"
+            >
+              <i class="fa-solid fa-check check"></i>
+              <span>Pray</span>
+              <i class="far fa-trash-alt delete"></i>
+            </li>
+
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-light"
+            >
+              <i class="fa-solid fa-check check"></i>
+              <span>Drink lots of water 😋</span>
+              <i class="far fa-trash-alt delete"></i>
+            </li>
+
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center text-light"
+            >
+              <i class="fa-solid fa-check check"></i>
+              <span>Meditate</span>
+              <i class="far fa-trash-alt delete"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="container">
+          <form class="search">
+            <input
+              type="text"
+              class="form-control m-auto text-light"
+              placeholder="Search Todos"
+            />
+          </form>
+          <h4 class="text-center text-light my-2">Today's Todos</h4>
+          <div class="stats">
+            <div>
+              <span class="spanMain"
+                >Remaining<span
+                  style="
+                    background-color: #00ff40;
+                    margin-left: 5px;
+                    padding: 5px;
+                    border-radius: 5px;
+                  "
+                  class="remainingTasks"
+                  >0</span
+                ></span
+              >
+            </div>
+            <div>
+              <span class="spanMain"
+                >Completed<span
+                  style="
+                    background-color: #00ff40;
+                    margin-left: 5px;
+                    padding: 5px;
+                    border-radius: 5px;
+                  "
+                  class="completedTasks"
+                  >0</span
+                ></span
+              >
+            </div>
+            <div>
+              <span class="spanMain"
+                >Total<span
+                  style="
+                    background-color: #00ff40;
+                    margin-left: 5px;
+                    padding: 5px;
+                    border-radius: 5px;
+                  "
+                  class="totalTasks"
+                  >0</span
+                ></span
+              >
+            </div>
+          </div>
+          <ul class="list-group todos mx-auto text-light"></ul>
+          <form class="add text-center my-4">
+            <label style="font-size: 20px; color: pink"
+              >Add a new todo 📝</label
+            >
+            <input
+              type="text"
+              class="form-control m-auto text-light"
+              name="add"
+              placeholder="Add Todo"
+            />
+          </form>
+
+          <footer>
+            <div class="footer">
+              <p>
+                Devloped by DevOP_F3lOh
+                <i
+                  style="margin-left: 10px"
+                  class="fa-regular fa-user buser"
+                ></i>
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
